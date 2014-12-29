@@ -54,13 +54,11 @@ public class ACSequitur {
                 }
             }
             // now, remove the diagrams in the list <<<< Here Alan
-            int delCount = 0;
-            for(int i=0; i<d.size();i++)
+            for(int i=d.size(); i>=0;i--)
             for(Integer D:forDeleting){                
-                if(i==D-delCount)
+                if(i==D)
                 {
                     d.remove(i);
-                    delCount++;                           
                 }
             }
             // now check each diagram to see if it creates any more new rules.
